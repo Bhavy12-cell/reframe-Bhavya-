@@ -1,5 +1,5 @@
-import { describe, it, expect } from 'bun:test';
-import { getPresetById, PRESETS } from '../presets';
+import { describe, it, expect } from "vitest";
+import { getPresetById, PRESETS } from "../presets";
 
 describe('getPresetById', () => {
   it('returns correct preset for valid id', () => {
@@ -20,5 +20,11 @@ describe('getPresetById', () => {
       expect(p.label).toBeTruthy();
       expect(p.platform).toBeTruthy();
     });
+  });
+
+  it('returns custom preset correctly', () => {
+    const preset = getPresetById('custom');
+    expect(preset?.id).toBe('custom');
+    expect(preset?.label).toBe('Custom');
   });
 });

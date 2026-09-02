@@ -6,21 +6,65 @@
 
 ### No login. No uploads. No ads. 100% private.
 
-[![GitHub Stars](https://img.shields.io/github/stars/magic-peach/reframe?style=flat-square&logo=github)](https://github.com/magic-peach/reframe/stargazers)
+<p align="center">
+  <a href="https://github.com/reframe-oss/reframe/stargazers">
+    <img src="https://img.shields.io/github/stars/reframe-oss/reframe?style=flat-square&logo=github&label=Stars&color=yellow&logoColor=white">
+  </a>
+  <a href="https://github.com/reframe-oss/reframe/network/members">
+    <img src="https://img.shields.io/github/forks/reframe-oss/reframe?style=flat-square&logo=github">
+  </a>
+  <a href="https://github.com/reframe-oss/reframe/issues">
+    <img src="https://img.shields.io/github/issues/reframe-oss/reframe?style=flat-square&logo=github&label=Issues&color=E53E3E&logoColor=white">
+  </a>
+</p>
 
-[![GitHub Forks](https://img.shields.io/github/forks/magic-peach/reframe?style=flat-square&logo=github)](https://github.com/magic-peach/reframe/network/members)
+<p align="center">
+  <a href="https://nextjs.org">
+    <img src="https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js&logoColor=white">
+  </a>
+  <a href="https://www.typescriptlang.org">
+    <img src="https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript">
+  </a>
+  <a href="https://ffmpegwasm.netlify.app">
+    <img src="https://img.shields.io/badge/FFmpeg.wasm-0.12.10-007808?style=flat-square&logo=ffmpeg&logoColor=white">
+  </a>
+</p>
 
-[![GitHub Issues](https://img.shields.io/github/issues/magic-peach/reframe?style=flat-square)](https://github.com/magic-peach/reframe/issues)
+<p align="center">
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square">
+  </a>
+  <a href="https://gssoc.girlscript.tech">
+    <img src="https://img.shields.io/badge/GSSoC-2026-FF6B35?style=flat-square">
+  </a>
+  <a href="https://github.com/magic-peach/reframe/actions/workflows/main.yml">
+    <img src="https://github.com/magic-peach/reframe/actions/workflows/main.yml/badge.svg">
+  </a>
+  <a href="CODE_OF_CONDUCT.md">
+    <img src="https://img.shields.io/badge/Code%20of%20Conduct-v2.1-purple?style=flat-square">
+  </a>
+</p>
 
-[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
-[![FFmpeg.wasm](https://img.shields.io/badge/FFmpeg.wasm-0.12.10-green?style=flat-square)](https://ffmpegwasm.netlify.app)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-[![GSSoC 2026](https://img.shields.io/badge/GSSoC-2026-FF6B35?style=flat-square)](https://gssoc.girlscript.tech)
-[![CI](https://github.com/Sneha079-codes/reframe/actions/workflows/main.yml/badge.svg)](https://github.com/Sneha079-codes/reframe/actions/workflows/main.yml)
+<p align="center">
+  <a href="https://www.netlify.com">
+    <img src="https://www.netlify.com/assets/badges/netlify-badge-color-accent.svg" alt="Deploys by Netlify" width="114" height="50">
+  </a>
+</p>
 
+</div>
 
-**[Try it now →](https://github.com/magic-peach/reframe)** · **[Report a Bug](https://github.com/magic-peach/reframe/issues/new?labels=bug)** · **[Request a Feature](https://github.com/magic-peach/reframe/issues/new?labels=feature)**
+---
+
+## Built With
+
+<div align="center">
+
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![FFmpeg](https://img.shields.io/badge/FFmpeg.wasm-0.12.10-green?style=flat-square&logo=ffmpeg)
+![Lucide](https://img.shields.io/badge/Lucide_React-latest-orange?style=flat-square)
+![Lottie](https://img.shields.io/badge/Lottie_Web-latest-purple?style=flat-square)
 
 </div>
 
@@ -51,6 +95,7 @@ Everything stays on your device. No servers. No tracking. No login.
 | Shortcut | Action |
 |----------|--------|
 | Ctrl+Enter / Cmd+Enter | Export video |
+| Space | Play/pause video preview |
 | M | Toggle audio mute |
 | Escape | Cancel export |
 
@@ -65,7 +110,7 @@ Everything stays on your device. No servers. No tracking. No login.
 ### Installation
 
 ```bash
-git clone https://github.com/magic-peach/reframe.git
+git clone https://github.com/reframe-oss/reframe.git
 cd reframe
 bun install
 ```
@@ -84,6 +129,15 @@ Open [http://localhost:3000](http://localhost:3000) — component changes reflec
 bun run build
 ```
 
+## Theme (Dark Mode)
+
+Reframe supports a theme toggle in the header that switches between light, dark, and a high-contrast mode. The app remembers your choice in localStorage and will respect your system preference when no explicit choice is saved.
+
+- Use the theme button in the top-right to switch modes.
+- The selected theme is persisted across sessions.
+- You can override the theme manually in the browser console by setting `localStorage.setItem('theme', 'dark')` (values: `light`, `dark`, `high-contrast`) and reloading the page.
+
+
 Outputs a static site to `out/` — deploy to Vercel, Netlify, GitHub Pages, or any static host.
 
 ---
@@ -94,13 +148,59 @@ Reframe uses static export (`output: 'export'`), so it can be deployed to any st
 
 ### Deploying to Vercel
 
+Reframe uses static export (`output: 'export'`) and can be deployed easily on Vercel.
+
+#### Option 1 — Vercel Dashboard (Recommended)
+
 1. Fork this repository
 2. Go to https://vercel.com/new
 3. Import your forked repository
-4. Set the Framework Preset to **Next.js**
+4. Configure:
+   - Framework Preset: Next.js
+   - Build Command: `bun run build`
+   - Output Directory: leave blank (Vercel auto-detects `out` for static exports)
 5. Click **Deploy**
 
-After deployment, Vercel will automatically build and host the static output.
+Vercel will automatically build and host the static output.
+
+#### Option 2 — Vercel CLI
+
+```bash
+# Install Vercel CLI globally
+npm i -g vercel
+
+# Login to Vercel
+vercel login
+
+# Deploy from project root
+vercel --prod
+```
+
+#### FFmpeg.wasm Configuration
+
+FFmpeg.wasm requires COOP/COEP headers for SharedArrayBuffer support.
+
+Add the following to `vercel.json`:
+
+```json
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ]
+    }
+  ]
+}
+```
 
 ### Alternative Static Hosts
 
@@ -111,6 +211,49 @@ You can also deploy Reframe on other static hosting providers:
 | **Netlify**          | Connect your fork at https://app.netlify.com/start          |
 | **GitHub Pages**     | Deploy the generated `out/` folder to the `gh-pages` branch |
 | **Cloudflare Pages** | Connect your fork in Cloudflare Pages                       |
+
+### Deploying to Vercel
+
+The quickest way to get Reframe live:
+
+**Option 1 — Vercel Dashboard (Recommended)**
+
+1. Fork this repository on GitHub
+2. Go to [vercel.com/new](https://vercel.com/new) and import your fork
+3. Vercel auto-detects Next.js settings:
+   - **Framework Preset:** Next.js
+   - **Build Command:** `bun run build`
+   - **Output Directory:** leave blank (Vercel auto-detects `out` for static exports)
+4. Click **Deploy** — your site will be live in ~2 minutes
+
+**Option 2 — Vercel CLI**
+
+```bash
+# Install Vercel CLI globally
+npm i -g vercel
+
+# Login to Vercel
+vercel login
+
+# Deploy from project root
+vercel --prod
+```
+
+> **Note:** FFmpeg.wasm requires COOP/COEP headers for SharedArrayBuffer support. On Vercel, add a `vercel.json` in your project root:
+>
+> ```json
+> {
+>   "headers": [
+>     {
+>       "source": "/(.*)",
+>       "headers": [
+>         { "key": "Cross-Origin-Opener-Policy", "value": "same-origin" },
+>         { "key": "Cross-Origin-Embedder-Policy", "value": "require-corp" }
+>       ]
+>     }
+>   ]
+> }
+> ```
 
 ### Deploying to Netlify
 
@@ -270,19 +413,19 @@ Reframe is an **official project in GirlScript Summer of Code (GSSoC) 2026**! We
 
 | Level               | Label                                                                                                          | Description                                                                        |
 | ------------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| 🟢 **Beginner**     | [`good first issue`](https://github.com/magic-peach/reframe/issues?q=is%3Aopen+label%3A%22good+first+issue%22) | Small, well-defined tasks — perfect if this is your first open source contribution |
-| 🟡 **Intermediate** | [`enhancement`](https://github.com/magic-peach/reframe/issues?q=is%3Aopen+label%3Aenhancement)                 | Feature improvements and UX enhancements                                           |
-| 🔴 **Advanced**     | [`feature`](https://github.com/magic-peach/reframe/issues?q=is%3Aopen+label%3Afeature)                         | New features requiring deeper understanding of FFmpeg/WASM                         |
-| 🔵 **Any Level**    | [`documentation`](https://github.com/magic-peach/reframe/issues?q=is%3Aopen+label%3Adocumentation)             | Docs, guides, and README improvements                                              |
-| ♿ **Any Level**    | [`accessibility`](https://github.com/magic-peach/reframe/issues?q=is%3Aopen+label%3Aaccessibility)             | Making Reframe usable for everyone                                                 |
+| 🟢 **Beginner**     | [`good first issue`](https://github.com/reframe-oss/reframe/issues?q=is%3Aopen+label%3A%22good+first+issue%22) | Small, well-defined tasks — perfect if this is your first open source contribution |
+| 🟡 **Intermediate** | [`enhancement`](https://github.com/reframe-oss/reframe/issues?q=is%3Aopen+label%3Aenhancement)                 | Feature improvements and UX enhancements                                           |
+| 🔴 **Advanced**     | [`feature`](https://github.com/reframe-oss/reframe/issues?q=is%3Aopen+label%3Afeature)                         | New features requiring deeper understanding of FFmpeg/WASM                         |
+| 🔵 **Any Level**    | [`documentation`](https://github.com/reframe-oss/reframe/issues?q=is%3Aopen+label%3Adocumentation)             | Docs, guides, and README improvements                                              |
+| ♿ **Any Level**    | [`accessibility`](https://github.com/reframe-oss/reframe/issues?q=is%3Aopen+label%3Aaccessibility)             | Making Reframe usable for everyone                                                 |
 
-**[→ Browse all GSSoC'26 issues](https://github.com/magic-peach/reframe/issues?q=is%3Aopen+label%3A%22gssoc%2726%22)**
+**[→ Browse all GSSoC'26 issues](https://github.com/reframe-oss/reframe/issues?q=is%3Aopen+label%3A%22gssoc%2726%22)**
 
 ---
 
 ### How to Contribute
 
-1. **Find an issue** — Browse [open issues](https://github.com/magic-peach/reframe/issues) or pick one from the table above
+1. **Find an issue** — Browse [open issues](https://github.com/reframe-oss/reframe/issues) or pick one from the table above
 2. **Comment on the issue** — Say you'd like to work on it so we don't duplicate effort
 3. **Fork the repo** — Click the Fork button at the top right
 4. **Create a branch** — `git checkout -b feat/your-feature-name`
@@ -292,19 +435,28 @@ Reframe is an **official project in GirlScript Summer of Code (GSSoC) 2026**! We
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide including development setup, code style, and PR checklist.
 
----
 
-## Contributors
-
-Thank you to everyone who has contributed to Reframe! 🎉
-
-[![Contributors](https://contrib.rocks/image?repo=magic-peach/reframe)](https://github.com/magic-peach/reframe/graphs/contributors)
-
----
 
 ## Privacy
 
 Reframe processes all videos **100% client-side**. Your video files are never uploaded to any server. You can even use Reframe offline (after first load). The source code is fully open for inspection.
+---
+
+## Contributors
+
+Thanks to all the amazing people who have contributed to Reframe!
+
+[![Contributors](https://contrib.rocks/image?repo=reframe-oss/reframe)](https://github.com/reframe-oss/reframe/graphs/contributors)
+
+We welcome contributions of all kinds — code, documentation, design, and feedback. Check out our [Contributing Guide](CONTRIBUTING.md) to get started.
+
+---
+
+## Thanks
+
+<a href="https://www.chromatic.com/"><img src="https://user-images.githubusercontent.com/321738/84662277-e3db4f80-af1b-11ea-88f5-91d67a5e59f6.png" width="153" height="30" alt="Chromatic" /></a>
+
+Thanks to [Chromatic](https://www.chromatic.com/) for providing the visual testing platform that helps us review UI changes and catch visual regressions.
 
 ---
 
@@ -316,8 +468,10 @@ MIT License — See [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-**If Reframe saved you time, please [⭐ star the repo](https://github.com/magic-peach/reframe) — it helps others discover it!**
+**If Reframe saved you time, please [⭐ star the repo](https://github.com/reframe-oss/reframe) — it helps others discover it!**
 
 Made with ❤️ for everyone who just wants to edit a video without the hassle.
 
 </div>
+
+---
